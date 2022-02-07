@@ -24,5 +24,43 @@
 			<li><a href="https://github.com/">github</a></li>
 			</ul>
 		</footer>
+		<div class="container">
+      <video id="video" autoplay></video>
+      <div class="detail">
+        <h1 style="display: table-row;">Possible things are:</h1>
+        <hr style="display: table-row;">
+        <p id="detect" style="display: table-row;"></p>
+      </div>
+      <div class="webcam">
+        <button class="btn" onclick="start()">Start webcam</button>
+        <button class="btn" onclick="StopWebCam()">Stop webcam</button>
+      </div>
+    </div>
+    <h2>By Akhil Soni</h2>
+    <script>
+        const video = document.getElementById("video");
+        const maxWidth = window.innerWidth;
+        const maxHeight = window.innerHeight;
+        const constraints = {
+          width: {ideal: maxWidth, max: maxWidth},
+          height: {ideal: maxHeight, max: maxHeight},
+        };
+        video.width = maxWidth;
+        video.height = maxHeight;
+        function detect(){
+          var det = document.getElementById("detect");
+          det.innerHTML = ``;
+          mobilenet.load().then(model => {
+            model.classify(video).then(predictions => {
+                console.log('Predictions: ');
+                console.log(predictions);
+                var det = document.getElementById("detect");
+                for(let i=0; i<predictions.length; i++){
+                  det.innerHTML += `<li>${predictions[i].className}</li>`;
+                }
+            });
+          });
+        }
+    </script>
 	</body>
 </html>
