@@ -1,28 +1,85 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Akhil</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="">email</a></li>
-			<li><a href="https://github.com/">github</a></li>
-			</ul>
-		</footer>
-	</body>
+<head>
+	<title>First webpage</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="intro">
+			<img class="profile-picture" src="https://logos.textgiraffe.com/logos/logo-name/Akhil-designstyle-smoothie-m.png">
+			<h1>Akhil Soni</h1>
+			<h3>Welcome At MyWorld</h3>
+			<p class="quote">{{ Pause and ponder }}</p>
+		</div>
+		<hr/>
+		<div class="about-grid">
+			<div class="i-am">
+				<h3>I am</h3>
+				<ul class="about-list">
+					<li>An engineer</li>
+					<li>A reader</li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="i-like">
+				<h3>I like to</h3>
+				<ul class="about-list">
+					<li>Meet new people</li>
+					<li>Play guitar</li>
+					<li>Eat Icecream</li>
+				</ul>
+			</div>
+		</div>
+		<hr/>
+		<div>
+			<h3 class="projects-heading">My Projects</h3>
+			<div class="projects-grid">
+				<div class="project-image-wrapper">
+					<h4>Project 1</h4>
+					<img class="project-image" src="thought1.jpg"/>
+				</div>
+				<div class="project-image-wrapper">
+					<h4>Project 2</h4>
+					<img class="project-image" src="thought2.jpg"/>
+				</div>
+				<div class="project-image-wrapper">
+					<h4>Project 3</h4>
+					<img class="project-image" src="thought3.jpg"/>
+				</div>
+				<div class="project-image-wrapper">
+					<h4>Project 4</h4>
+					<img class="project-image" src="thought4.jpg"/>
+				</div>
+			</div>
+		</div>
+		<div class="links-and-contact">
+			<div class="links">
+				<h3 >Links</h3>
+				<ul class="links-list">
+					<li>
+						<a href="https://github.com/akhil-maker">Github</a>
+					</li>
+					<li>
+						<a href="https://linkedin.com/in/akhilsoni">LinkedIn</a>
+					</li>
+				</ul>
+			</div>
+			<form class="contact-list" action="#">
+				<h3>Email</h3>
+				<input class="cont" type="email" id="email" placeholder="Enter your email">
+				<label class="error">Enter correct email-address</label>
+				<h3>Message</h3>
+				<textarea class="cont" id="message" placeholder="Your message"></textarea>
+				<div class="submit-button-wrapper">
+					<input class="submit" type="submit" id="submit-button" valid="Send Message"/>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
 </html>
