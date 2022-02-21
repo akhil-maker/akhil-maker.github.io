@@ -28,3 +28,25 @@ body, html{
     font-size: larger;
     background-color: cornflowerblue;
 }
+
+#preface{
+    background-color: #0e0e2a;
+    height: 50%;
+    display: flex
+}
+
+#akhilName{
+    width: 50%;
+    border-radius: 80%;
+}
+
+#introPara{
+    width: 50%;
+    color: #d410ed;
+    flex: 50%;
+    text-align: center;
+    align-self: center;
+    font-size: -webkit-xxx-large;
+    font-style: italic;
+    font-family: GT Zirkon,Helvetica,Arial,sans-serif;
+}
