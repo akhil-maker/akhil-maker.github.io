@@ -1,91 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="index.css">
-    	<title>Whole-The world of Akhil</title>
-	<link rel="stylesheet" href="style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Mono&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Whole-The world of Akhil</title>
 </head>
 <body>
-	<div id="firstLook">
-        	<p>something great is going to happen...<br>
-        	<button class="btn-welcome" onclick="landingPage()">Click here to go to Whole-the world of Akhil</button></p>
-    	</div>
-	<div class="container" id="mainContent">
-		<div class="intro">
-			<img class="profile-picture" src="https://logos.textgiraffe.com/logos/logo-name/Akhil-designstyle-smoothie-m.png">
-			<h1>Akhil Soni</h1>
-			<h3>Welcome At MyWorld</h3>
-			<p class="quote">{{ Pause and ponder }}</p>
-		</div>
-		<hr/>
-            	<img src="akhilVid.gif" alt="">
-		<div class="about-grid">
-			<div class="i-am">
-				<h3>I am</h3>
-				<ul class="about-list">
-					<li>An engineer</li>
-					<li>A reader</li>
-					<li></li>
-				</ul>
-			</div>
-			<div class="i-like">
-				<h3>I like to</h3>
-				<ul class="about-list">
-					<li>Meet new people</li>
-					<li>Play guitar</li>
-					<li>Eat Icecream</li>
-				</ul>
-			</div>
-		</div>
-		<hr/>
-		<div>
-			<h3 class="projects-heading">My Projects</h3>
-			<div class="projects-grid">
-				<div class="project-image-wrapper">
-					<h4>Project 1</h4>
-					<img class="project-image" src="thought1.jpg"/>
-				</div>
-				<div class="project-image-wrapper">
-					<h4>Project 2</h4>
-					<img class="project-image" src="thought2.jpg"/>
-				</div>
-				<div class="project-image-wrapper">
-					<h4>Project 3</h4>
-					<img class="project-image" src="thought3.jpg"/>
-				</div>
-				<div class="project-image-wrapper">
-					<h4>Project 4</h4>
-					<img class="project-image" src="thought4.jpg"/>
-				</div>
-			</div>
-		</div>
-		<div class="links-and-contact">
-			<div class="links">
-				<h3 >Links</h3>
-				<ul class="links-list">
-					<li>
-						<a href="https://github.com/akhil-maker">Github</a>
-					</li>
-					<li>
-						<a href="https://in.linkedin.com/in/akhil-soni-9827181a1">LinkedIn</a>
-					</li>
-				</ul>
-			</div>
-			<form class="contact-list" action="#">
-				<h3>Email</h3>
-				<input class="cont" type="email" id="email" placeholder="Enter your email">
-				<label class="error">Enter correct email-address</label>
-				<h3>Message</h3>
-				<textarea class="cont" id="message" placeholder="Your message"></textarea>
-				<div class="submit-button-wrapper">
-					<input class="submit" type="submit" id="submit-button" valid="Send Message"/>
-				</div>
-			</form>
-		</div>
-	</div>
-	<script src="index.js"></script>
-	<script src="script.js"></script>
+    <div id="firstLook">
+        <p>Something great is going to happen...<br>
+        <button class="btn-welcome" onclick="landingPage()">Click here to go to Whole-the world of Akhil</button></p>
+    </div>
+    <div id="content">
+        <div id="mainContent">
+            <div id="preface">
+                <img src="akhilName.gif" alt="" id="akhilName">
+                <p id="introPara">Hi,<br> Meet myself,<br> I am Akhil Soni</p>
+            </div>
+            <!-- To be entered here whatever you wanna add -->
+            <div class="container" id="repolist"></div>
+            <div></div>
+        </div>
+    </div>
+    
+    <script src="index.js">
+        
+    </script>
 </body>
 </html>
