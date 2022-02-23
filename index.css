@@ -50,3 +50,22 @@ body, html{
     font-style: italic;
     font-family: GT Zirkon,Helvetica,Arial,sans-serif;
 }
+
+#footer{
+    background-color: darkgray;
+    padding: 2rem 7rem 2rem 7rem;
+    display: flex;
+}
+
+#footer:hover{
+    filter: brightness(0.75);
+    color: #4f0ef5;
+}
+
+.logoimg{
+    margin: 0px 10px 0px 10px;
+    width: 37px;
+    height: 37px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
