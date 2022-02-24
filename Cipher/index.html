@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cipher</title>
+</head>
+<body>
+    <div>
+        <select name="ciphers" id="ciphers">
+            <option value="Caesar">Caesar Cipher</option>
+            <option value="Vigenere">Vigenere Cipher</option>
+        </select>
+        <p>Plaintext</p>
+        <input type="text" style="border: 2px solid black; width:50%; height:77px; font-size: 60px;" id="pt">
+        <p>Key</p>
+        <input type="text" style="border: 2px solid black; width:50%; height:77px; font-size: 60px;" id="key"><br>
+        <button id="convert" onclick="convert()" style="border: 2px solid black; width:70px; height:20px; margin: 2px;">Submit</button>
+        <p>Ciphertext</p>
+        <textarea style="border: 2px solid black; width:50%; height:77px; font-size: 60px;" id="ct"></textarea>
+    </div>
+    <div style="width:50%; height:77px; font-size: 60px; margin: 10px;" id="ct">By Akhil Soni</div>
+    <script src="index.js"></script>
+</body>
+</html>
