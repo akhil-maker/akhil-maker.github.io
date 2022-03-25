@@ -3,7 +3,7 @@ body, html{
     margin: 0;
 }
 #firstLook {
-    /* background-image: url('galaxy.gif'); */
+    background-image: url('galaxy.gif'); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
