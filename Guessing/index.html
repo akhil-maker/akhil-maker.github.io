@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guessing game</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>Guess the number</h1>
+		<div class="box">
+			<h2>Enter a number between 1 and 20</h2>
+			<input type="text" id="myinp" name="inp"><button onclick="numCheck()">Enter</button><hr>Result: <label id="res">Please give an input</label><hr><label>Chance: <label id="chances">5</label></label><button onclick="setAll()">Reset</button>
+		</div>
+		<label id="win"></label>
+	</div>
+</body>
+</html>
